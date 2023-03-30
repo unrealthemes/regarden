@@ -34,10 +34,20 @@ let MAIN = {
             $(this).hide();
             $(this).parents('.tables_list').find('.table_row.hidden').removeClass('hidden');
         });
-
+        //
         document.addEventListener( 'wpcf7mailsent', function( event ) {
             $.magnificPopup.open({items: {src: '#thanks'},type: 'inline'});
         }, false );
+        //
+        let $megaMenu = $('.jsMegaMenu');
+        let $menuWrapper = $('.mega_menu_wrapper .mega_menu');
+        $(document).on('click', function (e) {
+            if (!$megaMenu.is(e.target) && $megaMenu.has(e.target).length === 0 && 
+                !$menuWrapper.is(e.target) && $menuWrapper.has(e.target).length === 0) {
+                $('.mega_menu_wrapper').slideUp(200);
+                $megaMenu.removeClass('active');
+            }
+        });
     },
 
 };
