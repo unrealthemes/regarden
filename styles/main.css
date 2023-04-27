@@ -599,7 +599,7 @@ hr {
   z-index: 5;
 }
 
-.b_header::after {
+/* .b_header::after {
   position: absolute;
   top: 100%;
   left: 0;
@@ -608,7 +608,7 @@ hr {
   content: '';
   z-index: 0;
   background-color: #1A1A1A;
-}
+} */
 
 .b_header .logo_wrapper,
 .b_header .desktop_contacts,
@@ -2097,6 +2097,7 @@ textarea.form_control {
 @media (max-width: 767px) {
   .table_theme .table_row {
     border-radius: 15px 15px 0 0;
+    background-color: unset;
   }
 }
 
@@ -2209,7 +2210,6 @@ textarea.form_control {
   font-weight: 400;
   background-color: #F7F6F3;
   padding: 10px 20px;
-  border: 1px solid #BBD995;
   opacity: 0.3;
   font-size: 13px;
 }
@@ -2223,8 +2223,11 @@ textarea.form_control {
 @media (max-width: 767px) {
   .table_theme table thead th {
     border: none;
-    border-left: 1px solid #BBD995;
   }
+}
+
+.table_theme table thead th:not(:first-child) {
+  border-left: 1px solid #BBD995;
 }
 
 .table_theme table thead tr:first-child th {
@@ -2261,6 +2264,10 @@ textarea.form_control {
   }
 }
 
+.table_theme table thead tr:last-of-type {
+  border-bottom: 1px solid #BBD995;
+}
+
 @media (max-width: 767px) {
   .table_theme table tbody {
     display: -ms-flexbox;
@@ -2271,14 +2278,11 @@ textarea.form_control {
   }
 }
 
-@media (max-width: 767px) {
-  .table_theme table tbody tr {
-    border-top: 1px solid #BBD995;
-  }
+.table_theme table tbody tr:not(:last-of-type) {
+  border-bottom: 1px solid #BBD995;
 }
 
 .table_theme table td {
-  border: 1px solid #BBD995;
   background-color: #fff;
   color: #1A1A1A;
   padding: 15px 20px;
@@ -2294,8 +2298,11 @@ textarea.form_control {
   .table_theme table td {
     border: none;
     width: 33.33%;
-    border-left: 1px solid #BBD995;
   }
+}
+
+.table_theme table td:not(:first-child) {
+  border-left: 1px solid #BBD995;
 }
 
 @media (max-width: 767px) {
