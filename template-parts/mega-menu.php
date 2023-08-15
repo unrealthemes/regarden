@@ -4,7 +4,7 @@ $categories = get_terms(
     [
         'orderby' => 'name',
         'order' => 'ASC',
-        'hide_empty' => false,
+        'hide_empty' => 1,
     ] 
 ); 
 ?>

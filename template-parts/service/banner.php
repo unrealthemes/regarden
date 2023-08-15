@@ -1,6 +1,12 @@
 <?php 
 global $post;
 
+$hide = get_field('hide_h1_service');
+
+if ($hide) {
+    return false;
+}
+
 $thumbnail = get_the_post_thumbnail($post->ID, 'full'); 
 ?>
 

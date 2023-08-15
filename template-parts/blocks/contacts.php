@@ -34,7 +34,7 @@ $title_phones_r = get_field('title_phones_r_contacts');
 $phones_r = get_field('phones_r_contacts');
 $social_network = get_field('social_network_contacts');
 $form = get_field('form_contacts');
-$map = get_field('y_m_contacts');
+$map = get_field('y_m_contacts', get_the_ID());
 ?>
 
 <?php if ( !empty( $_POST['query']['preview'] ) ) : ?>

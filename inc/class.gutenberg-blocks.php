@@ -147,6 +147,221 @@ class UT_Guneberg_Blocks {
             ]);
             
             acf_register_block_type([
+                'name'              => 'banner-services',
+                'title'             => 'Баннер (сервисы)',
+                'render_template'   => 'template-parts/blocks/banner-services.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [ 'Баннер' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'banner-landing',
+                'title'             => 'Баннер landing',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/banner-landing.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [ 'Баннер' ],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'landing-work',
+                'title'             => 'Landing work',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/landing-work.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'landing-work2',
+                'title'             => 'Landing work 2',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/landing-work2.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'landing-price',
+                'title'             => 'Landing price',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/landing-price.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'landing-pond',
+                'title'             => 'Landing pond',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/landing-pond.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'video-review',
+                'title'             => 'Video review',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/video-review.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'installment',
+                'title'             => 'Рассрочка',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/installment.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'order',
+                'title'             => 'Заказ',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/order.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'guarantees',
+                'title'             => 'Гарантии',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/guarantees.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'landing-map',
+                'title'             => 'Landing map',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/landing-map.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
+                'name'              => 'info-tooltip',
+                'title'             => 'Инфо Tooltip',
+                // 'description'       => __('A custom main-banner.'),
+                'render_template'   => 'template-parts/blocks/info-tooltip.php',
+                'category'          => 'regarden',
+                'icon'              => 'regarden',
+                'keywords'          => [],
+                'example'           => [
+                    'attributes' => [
+                        'mode' => 'preview',
+                        'data' => [
+                            'is_preview' => true
+                        ]
+                    ]
+                ]
+            ]);
+            
+            acf_register_block_type([
                 'name'              => 'faq',
                 'title'             => 'Вопрос-Ответ',
                 // 'description'       => __('A custom faq.'),

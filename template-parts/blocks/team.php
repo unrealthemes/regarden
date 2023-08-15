@@ -40,8 +40,8 @@ $form_sb = get_field('form_sb_team');
         <div class="container">
 
             <?php if ( $title ) : ?>
-                <div class="section_title has_sidebar">
-                    <h2><?php echo $title; ?></h2>
+                <div class="section_title has_sidebar style-h1">
+                    <h1><?php echo $title; ?></h1>
                 </div>
             <?php endif; ?>
 

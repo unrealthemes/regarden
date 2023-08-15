@@ -19,8 +19,13 @@ $col_right = get_field('col_right', 'option');
     <?php endif; ?>
 
     <?php if ( $col_right ) : ?>
-        <div class="conracts_row">
-            <?php echo $col_right; ?>
+        <div class="contacts_row">
+			<div class="col-left">
+				<a href="#request" class="btn btn_green send-request jsOpenModals">Оставить заявку</a>
+			</div>
+            <div class="col-right">
+				<?php echo $col_right; ?>
+			</div>
         </div>
     <?php endif; ?>
 

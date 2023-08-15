@@ -48,6 +48,32 @@ let MAIN = {
                 $megaMenu.removeClass('active');
             }
         });
+        //   
+        // if ( $(window).width() > 992 ) {    
+        //     $('.mega_menu_wrapper .menu_left > ul > li').hover(
+        //         function() {    
+        //             var elem = $(this);
+        //             setTimeout(function() {    // console.log('hover');
+        //                 elem.find('.sub-menu').css({'opacity':'1', 'visibility':'visible', 'pointerEvents':'all'});
+        //             }, 1000);
+        //         }, 
+        //         function() {
+        //             var elem = $(this);
+        //             setTimeout(function() {    // console.log('un hover');
+        //                 // elem.find('.sub-menu').css({'opacity':'0', 'visibility':'hidden', 'pointerEvents':'none'});
+        //                 $('.sub-menu').css({'opacity':'0', 'visibility':'hidden', 'pointerEvents':'none'});
+        //             }, 1000);
+        //         }
+        //     );
+        // }
+
+        $('.btn.steps').on('click', function() {  
+            var number = $(this).data('step');
+            $(this).parent().removeClass('active-step').next().addClass('active-step');
+
+            console.log( number );
+        });
+
     },
 
 };

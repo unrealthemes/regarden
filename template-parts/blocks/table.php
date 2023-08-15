@@ -24,6 +24,7 @@ if ( !empty($block['align']) ) {
 $title = get_field('title_tbl');
 $tables = get_field('tbl');
 $info = get_field('info_txt_tbl');
+$h = ( is_singular('service') ) ? 'h2' : 'h1';
 ?>
 
 <?php if ( !empty( $_POST['query']['preview'] ) ) : ?>
@@ -38,8 +39,8 @@ $info = get_field('info_txt_tbl');
         <div class="container">
 
         <?php if ($title) : ?>
-            <div class="section_title has_sidebar">
-                <h2><?php echo $title; ?></h2>
+            <div class="section_title has_sidebar style-h1">
+                <<?php echo $h; ?>><?php echo $title; ?></<?php echo $h; ?>>
             </div>
         <?php endif; ?>
 
@@ -60,7 +61,7 @@ $info = get_field('info_txt_tbl');
             <?php if ($tables) : ?>
                 <div class="section_content">
                     <div class="cost_wrapper table_theme">
-                        <div class="tables_list">
+                        <div class="tables_list all">
 
                             <?php 
                             foreach ($tables as $table) : 
@@ -83,7 +84,6 @@ $info = get_field('info_txt_tbl');
                                                 <th><?php echo $table['name_1_th_tbl']; ?></th>
                                                 <th><?php echo $table['name_2_th_tbl']; ?></th>
                                                 <th><?php echo $table['name_3_th_tbl']; ?></th>
-                                                <th><?php echo $table['name_4_th_tbl']; ?></th>
                                             </tr>
                                         </thead>
 
@@ -102,7 +102,6 @@ $info = get_field('info_txt_tbl');
                                                             <td><?php echo nl2br( $col['val_1_tb_tbl']); ?></td>
                                                             <td><?php echo nl2br( $col['val_2_tb_tbl']); ?></td>
                                                             <td><?php echo nl2br( $col['val_3_tb_tbl']); ?></td>
-                                                            <td><?php echo nl2br( $col['val_4_tb_tbl']); ?></td>
                                                         </tr>
                                                     <?php endif; ?>
 
@@ -116,13 +115,13 @@ $info = get_field('info_txt_tbl');
 
                             <?php endforeach; ?>
 
-                            <?php if ( count($tables) > 4 ) : ?>
-                                <div class="more_wrapper">
-                                    <a class="btn btn_green_empty w100 jsMoreTables" href="#">
-                                        показать еще
-                                    </a>
-                                </div>
-                            <?php endif; ?>
+<!--                            --><?php //if ( count($tables) > 4 ) : ?>
+<!--                                <div class="more_wrapper">-->
+<!--                                    <a class="btn btn_green_empty w100 jsMoreTables" href="#">-->
+<!--                                        показать еще-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            --><?php //endif; ?>
 
                         </div>
                     </div>

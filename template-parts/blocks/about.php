@@ -63,15 +63,19 @@ $link = get_field('link_about');
                     <div class="about_company">
 
                         <?php 
-                        if ( $video && $video_preview_id ) : 
+                        if ( $video_preview_id ) : 
                             $video_preview_url = wp_get_attachment_url( $video_preview_id, 'full' );
                         ?>
                             <div class="video_wrapper">
                                 <div class="video_poster">
                                     <img src="<?php echo esc_attr($video_preview_url); ?>" alt="YouTube">
-                                    <a class="btn btn_green btn_video border20" href="<?php echo $video; ?>" data-fancybox>
-                                        <span class="title">Смотреть видео</span>
-                                    </a>
+									
+									<?php if ( $video ) : ?>
+										<a class="btn btn_green btn_video border20" href="<?php echo $video; ?>" data-fancybox>
+											<span class="title">Смотреть видео</span>
+										</a>
+									<?php endif; ?>
+									
                                 </div>
                             </div>
                         <?php endif; ?>

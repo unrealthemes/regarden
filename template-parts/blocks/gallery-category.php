@@ -37,9 +37,17 @@ $categories = get_field('gallery_c');
         <div class="container">
 
             <?php if ($title) : ?>
-                <div class="section_title has_sidebar">
-                    <h2><?php echo $title; ?></h2>
-                </div>
+
+                <?php if (is_front_page()) : ?>
+                    <div class="section_title has_sidebar">
+                        <h2><?php echo $title; ?></h2>
+                    </div>
+                <?php else : ?>
+                    <div class="section_title has_sidebar style-h1">
+                        <h1><?php echo $title; ?></h1>
+                    </div>
+                <?php endif; ?>
+
             <?php endif; ?>
 
             <?php if ($categories) : ?>
